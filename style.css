@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  transition: background-image 2s ease-in-out;
+  background-size: cover;
+  background-position: center center;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(59, 67, 76, 0.4);
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  color: rgba(255, 255, 255);
+}
+
+.weather {
+  height: 10%;
+  max-height: 50px;
+  display: flex;
+  margin-top: 0px;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  vertical-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+
+.date {
+  font-size: 4rem;
+}
+.time {
+  font-size: 6rem;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+}
+
+.quote {
+  width: 70%;
+  max-width: 800px;
+  height: 30%;
+  max-height: 250px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  font: 1.2rem Georgia, serif;
+  text-align: justify;
+  margin: 0;
+  background: rgba(255, 124, 2, 0.5);
+  padding: 1em;
+  border-radius: 1em;
+  color: aliceblue;
+}
+
+.quote figcaption,
+.quote blockquote {
+  margin: 0.7em;
+}
+.quote figcaption {
+  text-align: right;
+  vertical-align: bottom;
+}
+
+
+.btn-picture {
+  position: absolute;
+  bottom: 100px;
+  left: 0px;
+  width: 2rem;
+  height: 2rem;
+  border: 0px;
+  background: url(/button-update-2.png) no-repeat;
+  background-size: contain;
+  transition: 1.5s;
+}
+
+.btn-quote {
+  width: 2rem;
+  height: 2rem;
+  border: 0px;
+  margin-top: 20px;
+  background: url(/button-update.png) no-repeat;
+  background-size: contain;
+  transition: 1.5s;
+}
+
+.btn-quote:hover,
+.btn-picture:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: 1.5s;
+}
+
+.btn-quote:active,
+.btn-picture:focus,
+.btn-picture:active,
+.btn-quote:focus {
+  outline: 0px;
+}
+
+.weather-icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  background-size: contain;
+  align-self: center;
+}
+
+.humidity,
+.wind-speed,
+.temperature {
+  margin-left: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .time {
+    font-size: 6rem;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+
+  .weather {
+    font-size: 1.5rem;
+  }
+
+.weather-icon {
+  margin-right: 15px;
+  margin-left: 10px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .time {
+    font-size: 4rem;
+  }
+
+  .date {
+    font-size: 1.5rem;
+  }
+
+  
+.quote figcaption,
+.quote blockquote {
+  margin: 0.3em;
+}
+
+.quote {
+  width: 80%;
+  padding: 0.5em;
+  height: 35%;
+}
+
+.weather {
+    font-size: 1rem;
+  }
+
+  .weather-icon {
+ 
+    margin-right: 0px;
+    margin-left: 5px;
+    width: 1rem;
+    height: 1rem;
+    }
+
+
+    .humidity,
+    .wind-speed,
+    .temperature {
+      margin-left: 5px;
+    }
+}
