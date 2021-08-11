@@ -4,49 +4,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="owfont-regular.css">
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css" />
-  <title>momentum</title>
+  <title>Momentum</title>
 </head>
 
 <body>
-<main>
-  <!--Weather-->
-  <div class="weather">
-  <div class="city" contenteditable="true">Минск</div>
-  <div class="weather-icon owf"></div>
-  <div class="temperature"></div>
-  <div class="humidity"></div>
-  <div class="wind-speed"></div>
-  </div>
-  <!--DataTime-->
+  <main>
 
-  <time class="date"></time>
-  <time class="time"></time>
+    <div class="weather">
+      <h2>
+        <span class="city" contenteditable="true">
 
-  <!--Picture Greeting Name Focus-->
+        </span>
+      </h2>
+    </div>
+    <div class="weather-info">
+      <div class="weather-icon"></div>
+      <div class="weather-description"></div>
+      <div class="temperature"></div>
+      <div class="humidity"></div>
+      <div class="wind-speed"></div>
+    </div>
+    </div>
 
-  <button class="btn-picture">
-  </button>
-  <h1>
-    <span class="greeting"></span>
-    <span class="name" contenteditable="true"></span>
-  </h1>
-  <h2>What Is Your Focus For Today?</h2>
-  <h2 class="focus" contenteditable="true"></h2>
+    <!-- <img style="width: 200px; height: 200px;" class="test-img"> -->
 
-  <!--Quote-->
+    <time class="date"></time>
+    <time class="time"></time>
 
-  <button class="btn-quote"></button>
-  <figure class="quote">
-    <blockquote></blockquote>
-    <figcaption></figcaption>
-  </figure>
+    <button class="btn-picture">
+    </button>
+    <h1>
+      <span class="greeting"></span>
+      <span class="userName" contenteditable="true"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?
+      <span class="userFocus" contenteditable="true"></span>
+    </h2>
 
-  <script src="script.js"></script>
-</main>
+    <button class="btn-quote"></button>
+    <figure class="quote">
+      <blockquote></blockquote>
+      <figcaption></figcaption>
+    </figure>
+
+    <script src="./dist/constants.js"></script>
+    <script src="./dist/functions.js"></script>
+    <script src="./dist/app.js"></script>
+  </main>
 </body>
 
 </html>

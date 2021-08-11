@@ -1,0 +1,23 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "Task: ***https://github.com/rolling-scopes-school/tasks/blob/master/tasks/ready-projects/momentum.md***",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nAzdAc/momentum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nAzdAc/momentum/issues"
+  },
+  "homepage": "https://github.com/nAzdAc/momentum#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
