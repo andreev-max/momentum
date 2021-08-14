@@ -52,13 +52,13 @@ setInterval(showTime, 1000);
 var userCity = localStorage.getItem("city");
 if (userCity) {
     getWeather(userCity);
-    getName();
-    getFocus();
-    getCity();
-    showQuote();
-    showTime();
-    setImage();
 }
+getName();
+getFocus();
+getCity();
+showQuote();
+showTime();
+setImage();
 function getWeather(selectedCity) {
     return __awaiter(this, void 0, void 0, function () {
         var res, data, _a;

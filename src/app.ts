@@ -15,13 +15,13 @@ setInterval(showTime, 1000);
 const userCity = localStorage.getItem("city");
   if (userCity) {
     getWeather(userCity);
-    getName();
-    getFocus();
-    getCity();
-    showQuote();
-    showTime();
-    setImage();
   }
+  getName();
+  getFocus();
+  getCity();
+  showQuote();
+  showTime();
+  setImage();
 
 async function getWeather(selectedCity: string) {
   try {
