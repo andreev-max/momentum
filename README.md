@@ -8,4 +8,4 @@ Task: ***https://github.com/rolling-scopes-school/tasks/blob/master/tasks/ready-
 
 Score: 46 / 50
 
-## Improved deploy: ***https://nazdac-new-momentum.netlify.app/***
+## Improved deploy: ***https://nazdac-momentum.netlify.app/***
