@@ -12,6 +12,16 @@ city.addEventListener("focus", focusCity);
 city.addEventListener("keypress", setCity);
 city.addEventListener("blur", setCity);
 setInterval(showTime, 1000);
+const userCity = localStorage.getItem("city");
+  if (userCity) {
+    getWeather(userCity);
+    getName();
+    getFocus();
+    getCity();
+    showQuote();
+    showTime();
+    setImage();
+  }
 
 async function getWeather(selectedCity: string) {
   try {
@@ -38,16 +48,3 @@ async function getWeather(selectedCity: string) {
     }, 1500);
   }
 }
-
-window.onload = () => {
-  const userCity = localStorage.getItem("city");
-  if (userCity) {
-    getWeather(userCity);
-    getName();
-    getFocus();
-    getCity();
-    showQuote();
-    showTime();
-    setImage();
-  }
-};

@@ -49,6 +49,16 @@ city.addEventListener("focus", focusCity);
 city.addEventListener("keypress", setCity);
 city.addEventListener("blur", setCity);
 setInterval(showTime, 1000);
+var userCity = localStorage.getItem("city");
+if (userCity) {
+    getWeather(userCity);
+    getName();
+    getFocus();
+    getCity();
+    showQuote();
+    showTime();
+    setImage();
+}
 function getWeather(selectedCity) {
     return __awaiter(this, void 0, void 0, function () {
         var res, data, _a;
@@ -85,16 +95,4 @@ function getWeather(selectedCity) {
         });
     });
 }
-window.onload = function () {
-    var userCity = localStorage.getItem("city");
-    if (userCity) {
-        getWeather(userCity);
-        getName();
-        getFocus();
-        getCity();
-        showQuote();
-        showTime();
-        setImage();
-    }
-};
 //# sourceMappingURL=app.js.map
