@@ -1,19 +1,21 @@
 "use strict";
-var time = document.querySelector('.time');
-var date = document.querySelector('.date');
-var greeting = document.querySelector('.greeting');
-var userName = document.querySelector('.userName');
-var userFocus = document.querySelector('.userFocus');
-var quote = document.querySelector('blockquote');
-var buttonQuote = document.querySelector('.btn-quote');
-var author = document.querySelector('figcaption');
-var weatherIcon = document.querySelector('.weather-icon');
-var temperature = document.querySelector('.temperature');
-var humidity = document.querySelector('.humidity');
-var windSpeed = document.querySelector('.wind-speed');
-var city = document.querySelector('.city');
-var buttonPicture = document.querySelector('.btn-picture');
-var body = document.querySelector('body');
+var time = document.querySelector(".time");
+var date = document.querySelector(".date");
+var greeting = document.querySelector(".greeting");
+var userName = document.querySelector(".userName");
+var userFocus = document.querySelector(".userFocus");
+var quote = document.querySelector("blockquote");
+var buttonQuote = document.querySelector(".btn-quote");
+var author = document.querySelector(".author");
+var weatherInfo = document.querySelector(".weather-info");
+var weatherIcon = document.querySelector(".weather-icon");
+var weatherDescription = document.querySelector(".weather-icon-description");
+var temperature = document.querySelector(".temperature");
+var humidity = document.querySelector(".humidity");
+var windSpeed = document.querySelector(".wind-speed");
+var city = document.querySelector(".city");
+var buttonPicture = document.querySelector(".btn-picture");
+var body = document.querySelector("body");
 var images = [
     "01.jpg",
     "02.jpg",

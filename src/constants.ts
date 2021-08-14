@@ -1,18 +1,22 @@
-const time = document.querySelector('.time')!
-const date = document.querySelector('.date')!
-const greeting = document.querySelector('.greeting')!
-const userName: any = document.querySelector('.userName')!
-const userFocus: any = document.querySelector('.userFocus')!
-const quote = document.querySelector('blockquote')!
-const buttonQuote = document.querySelector('.btn-quote')!
-const author = document.querySelector('figcaption')!
-const weatherIcon: any = document.querySelector('.weather-icon')!
-const temperature = document.querySelector('.temperature')!
-const humidity = document.querySelector('.humidity')!
-const windSpeed = document.querySelector('.wind-speed')!
-const city: any = document.querySelector('.city')!
-const buttonPicture: any = document.querySelector('.btn-picture')!
-const body = document.querySelector('body')!
+const time = document.querySelector(".time")!;
+const date = document.querySelector(".date")!;
+const greeting = document.querySelector(".greeting")!;
+const userName: any = document.querySelector(".userName")!;
+const userFocus: any = document.querySelector(".userFocus")!;
+const quote = document.querySelector("blockquote")!;
+const buttonQuote = document.querySelector(".btn-quote")!;
+const author = document.querySelector(".author")!;
+const weatherInfo: any = document.querySelector(".weather-info")!;
+const weatherIcon: any = document.querySelector(".weather-icon")!;
+const weatherDescription: any = document.querySelector(
+  ".weather-icon-description"
+)!;
+const temperature = document.querySelector(".temperature")!;
+const humidity = document.querySelector(".humidity")!;
+const windSpeed = document.querySelector(".wind-speed")!;
+const city: any = document.querySelector(".city")!;
+const buttonPicture: any = document.querySelector(".btn-picture")!;
+const body = document.querySelector("body")!;
 
 const images = [
   "01.jpg",

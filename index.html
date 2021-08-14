@@ -4,50 +4,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="style.css" />
   <title>Momentum</title>
 </head>
 
 <body>
   <main>
-
-    <div class="weather">
-      <h2>
-        <span class="city" contenteditable="true">
-
-        </span>
-      </h2>
-    </div>
     <div class="weather-info">
-      <div class="weather-icon"></div>
-      <div class="weather-description"></div>
-      <div class="temperature"></div>
-      <div class="humidity"></div>
-      <div class="wind-speed"></div>
+      <figure class="weather-icon-wrap">
+        <img class="weather-icon" />
+        <figcaption class="weather-icon-description"></figcaption>
+      </figure>
+      <p class="weather-value">
+        Temperature:
+        <span class="temperature"> </span>
+      </p>
+      <p class="weather-value">
+        Humidity:
+        <span class="humidity"> </span>
+      </p>
+      <p class="weather-value">
+        Wind Speed:
+        <span class="wind-speed"></span>
+      </p>
     </div>
-    </div>
-
-    <!-- <img style="width: 200px; height: 200px;" class="test-img"> -->
-
+    <h2 class="changeable city-wrap">
+      <span class="city" contenteditable="true"> </span>
+    </h2>
     <time class="date"></time>
     <time class="time"></time>
 
-    <button class="btn-picture">
-    </button>
-    <h1>
+    <button class="btn-picture"></button>
+    <h1 class="userName-wrap">
       <span class="greeting"></span>
-      <span class="userName" contenteditable="true"></span>
+      <br />
+      <span class="userName changeable" contenteditable="true"></span>
     </h1>
-    <h2>What Is Your Focus For Today?
-      <span class="userFocus" contenteditable="true"></span>
+    <h2 class="userFocus-wrap">
+      What Is Your Focus For Today?
+      <br />
+      <span class="userFocus changeable" contenteditable="true"></span>
     </h2>
 
     <button class="btn-quote"></button>
-    <figure class="quote">
+    <div class="quote">
       <blockquote></blockquote>
-      <figcaption></figcaption>
-    </figure>
+      <figcaption class="author"></figcaption>
+    </div>
 
     <script src="./dist/constants.js"></script>
     <script src="./dist/functions.js"></script>

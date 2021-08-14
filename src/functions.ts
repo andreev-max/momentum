@@ -1,18 +1,8 @@
-
-
-
-
-
 function setCity(event: any) {
   const cityValue: string = event.target.textContent.trim();
   localStorage.setItem("city", cityValue);
   if (event.keyCode === 13 || event.type === "blur") {
-    if (cityValue && city.textContent !== "invalid value") {
-      localStorage.setItem("city", cityValue);
-      getWeather();
-    } else {
-      getCity();
-    }
+    getWeather(cityValue);
     city.blur();
   }
 }
@@ -29,11 +19,8 @@ function setFocus(event: any): void {
   const focusValue: string = event.target.textContent.trim();
   localStorage.setItem("userFocus", focusValue);
   if (event.keyCode === 13 || event.type === "blur") {
-    if (focusValue) {
-      localStorage.setItem("userFocus", focusValue);
-    } else {
-      getFocus();
-    }
+    localStorage.setItem("userFocus", focusValue);
+    getFocus();
     userFocus.blur();
   }
 }
@@ -50,11 +37,7 @@ function setName(event: any): void {
   const nameValue: string = event.target.textContent.trim();
   localStorage.setItem("userName", nameValue);
   if (event.keyCode === 13 || event.type === "blur") {
-    if (nameValue) {
-      localStorage.setItem("userName", nameValue);
-    } else {
-      getName();
-    }
+    getName();
     userName.blur();
   }
 }
@@ -78,9 +61,16 @@ function showTime(): void {
   date.innerHTML = `${showWeekDay(weekDay)}, ${day} ${showMonth(month)}`;
   time.innerHTML = `${hour}:${addZero(min)}:${addZero(sec)}`;
   greeting.textContent = setGreet(hour);
-  if (min === 23 && sec === 0) {
+  if (min === 0 && sec === 0) {
     setImage();
   }
+}
+
+function showQuote(): void {
+  if (imageIndex > 27) imageIndex = 0;
+  author.textContent = quotes[quoteIndex][0];
+  quote.textContent = quotes[quoteIndex][1];
+  quoteIndex++;
 }
 
 function setImage(): void {
@@ -123,7 +113,6 @@ function setGreet(hour: number): string {
 function getRandomInt(max: number): number {
   const roundedMax: number = Math.floor(max);
   return Math.floor(Math.random() * (roundedMax - 1)) + 1;
-  //Максимум не включается, минимум включается
 }
 
 function addZero(n: number): string {

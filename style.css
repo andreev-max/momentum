@@ -32,7 +32,7 @@ body {
 main {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(59, 67, 76, 0.5);
+  background-color: rgba(59, 67, 76, 0.6);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -40,12 +40,17 @@ main {
   justify-content: space-between;
   color: white;
   padding: 10px 5px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.userName-wrap {
+  font-size: 3rem;
 }
 
 .userName {
   font-family: 'roboto';
-  letter-spacing: 1px;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .userName:focus {
@@ -57,10 +62,18 @@ main {
   background-color: rgba(60, 158, 86, 0.7);
 }
 
+.userFocus-wrap {
+  font-size: 2rem;
+}
+
+br {
+  display: none;
+}
+
 .userFocus {
   font-family: 'appetite';
   letter-spacing: 5px;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 .userFocus:focus {
@@ -92,7 +105,7 @@ main {
 }
 
 .time {
-  font-size: 6rem;
+  font-size: 7rem;
 }
 
 .btn-picture {
@@ -150,34 +163,208 @@ main {
   text-align: right;
 }
 
-.weather {
-  display: flex;
-  align-items: center;
+.weather-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  gap: 10px;
+  font-size: 1.5rem;
 }
 
-.weather-info {
+.weather-icon-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background-color: rgba(255, 71, 71, 0.4);
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .weather-icon {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
 }
 
-@media (max-width: 500px) {
+.weather-value {
+  align-self: flex-start;
+}
+
+.weather-value span {
+  font-size: 1.2em;
+  color: red;
+}
+
+.city-wrap {
+  margin: 0 auto;
+}
+
+.changeable {
+  text-decoration: underline 1.5px;
+}
+
+@media (max-width: 1000px) {
+  .city {
+    font-size: 2rem;
+  }
+
+  .date {
+    font-size: 3rem;
+    align-self: flex-end;
+  }
+
+  .time {
+    font-size: 5rem;
+    align-self: flex-end;
+  }
+
+  .userName-wrap {
+    font-size: 2.2rem;
+  }
+
+  .userName {
+    font-size: 3.2rem;
+  }
+
+  .userFocus-wrap {
+    font-size: 1.3rem;
+  }
+
+  .userFocus {
+    font-size: 2.2rem;
+  }
+
   .quote {
+    font-size: 2rem;
+  }
+
+  .btn-quote {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .btn-picture {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .city {
     font-size: 1.5rem;
   }
+
+  .weather-info {
+    font-size: 1.1rem;
+  }
+
+  .weather-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .date {
+    margin-top: -30px;
+    font-size: 2.2rem;
+    align-self: flex-end;
+  }
+
+  .time {
+    font-size: 4rem;
+    align-self: flex-end;
+  }
+
+  .userName-wrap {
+    font-size: 2rem;
+  }
+
+  .userName {
+    font-size: 3rem;
+  }
+
+  .userFocus-wrap {
+    font-size: 1.3rem;
+  }
+
+  br {
+    display: block;
+  }
+
+  .userFocus {
+    font-size: 2.2rem;
+  }
+
+  .quote {
+    font-size: 1.6rem;
+  }
+
   .btn-quote {
     width: 2rem;
     height: 2rem;
   }
+
   .btn-picture {
     width: 3rem;
     height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .city {
+    margin-left: 40px;
+    font-size: 0.9rem;
+  }
+
+  .weather-info {
+    font-size: 0.7rem;
+  }
+
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .date {
+    margin-top: -80px;
+    font-size: 1.3rem;
+    align-self: flex-end;
+  }
+
+  .time {
+    font-size: 2.5rem;
+    align-self: flex-end;
+  }
+
+  .userName-wrap {
+    font-size: 1rem;
+  }
+
+  .userName {
+    font-size: 2rem;
+  }
+
+  .userFocus-wrap {
+    font-size: 1rem;
+  }
+
+  .userFocus {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+
+  .btn-quote {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .btn-picture {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
