@@ -37,7 +37,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var imageIndex = getRandomInt(21);
 var quoteIndex = getRandomInt(27);
+localStorage.setItem("lang", "en");
 buttonQuote.addEventListener("click", showQuote);
+buttonTranslateQuote.addEventListener("click", translateQuote);
 buttonPicture.addEventListener("click", setImage);
 userName.addEventListener("focus", focusName);
 userName.addEventListener("blur", setName);

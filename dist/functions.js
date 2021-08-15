@@ -58,11 +58,36 @@ function showTime() {
     }
 }
 function showQuote() {
-    if (imageIndex > 27)
-        imageIndex = 0;
-    author.textContent = quotes[quoteIndex][0];
-    quote.textContent = quotes[quoteIndex][1];
+    if (quoteIndex > 28)
+        quoteIndex = 0;
     quoteIndex++;
+    if (localStorage.getItem("lang") === "en") {
+        author.textContent = englishQuotes[quoteIndex][0];
+        quote.textContent = englishQuotes[quoteIndex][1];
+    }
+    else {
+        author.textContent = russianQuotes[quoteIndex][0];
+        quote.textContent = russianQuotes[quoteIndex][1];
+    }
+}
+function translateQuote() {
+    var lang = localStorage.getItem("lang");
+    if (lang === "en") {
+        lang = "ru";
+        localStorage.setItem("lang", lang);
+    }
+    else {
+        lang = "en";
+        localStorage.setItem("lang", lang);
+    }
+    if (lang === "en") {
+        author.textContent = englishQuotes[quoteIndex][0];
+        quote.textContent = englishQuotes[quoteIndex][1];
+    }
+    else {
+        author.textContent = russianQuotes[quoteIndex][0];
+        quote.textContent = russianQuotes[quoteIndex][1];
+    }
 }
 function setImage() {
     if (imageIndex > 20)

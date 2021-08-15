@@ -1,6 +1,8 @@
 let imageIndex = getRandomInt(21);
 let quoteIndex = getRandomInt(27);
+localStorage.setItem("lang", "en");
 buttonQuote.addEventListener("click", showQuote);
+buttonTranslateQuote.addEventListener("click", translateQuote);
 buttonPicture.addEventListener("click", setImage);
 userName.addEventListener("focus", focusName);
 userName.addEventListener("blur", setName);
@@ -13,15 +15,15 @@ city.addEventListener("keypress", setCity);
 city.addEventListener("blur", setCity);
 setInterval(showTime, 1000);
 const userCity = localStorage.getItem("city");
-  if (userCity) {
-    getWeather(userCity);
-  }
-  getName();
-  getFocus();
-  getCity();
-  showQuote();
-  showTime();
-  setImage();
+if (userCity) {
+  getWeather(userCity);
+}
+getName();
+getFocus();
+getCity();
+showQuote();
+showTime();
+setImage();
 
 async function getWeather(selectedCity: string) {
   try {

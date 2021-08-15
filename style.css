@@ -39,7 +39,7 @@ main {
   align-items: center;
   justify-content: space-between;
   color: white;
-  padding: 20px 7px;
+  padding: 10px 5px 20px 5px;
   position: relative;
   letter-spacing: 1px;
 }
@@ -110,7 +110,7 @@ br {
 
 .btn-picture {
   position: absolute;
-  top: 25px;
+  top: 15px;
   right: 15px;
   width: 4rem;
   height: 4rem;
@@ -130,7 +130,19 @@ br {
   background-size: contain;
 }
 
+.btn-translate-quote {
+  position: absolute;
+  left: 65px;
+  bottom: 25px;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background: url(/assets/icons/translate.png) no-repeat;
+  background-size: contain;
+}
+
 .btn-quote:hover,
+.btn-translate-quote:hover,
 .btn-picture:hover {
   cursor: pointer;
   transform: rotate(360deg);
@@ -138,6 +150,7 @@ br {
 }
 
 .btn-quote:active,
+.btn-translate-quote:active,
 .btn-picture:focus,
 .btn-picture:active,
 .btn-quote:focus {
@@ -246,6 +259,12 @@ br {
     height: 2.5rem;
   }
 
+  .btn-translate-quote {
+    left: 60px;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
   .btn-picture {
     width: 3.5rem;
     height: 3.5rem;
@@ -306,6 +325,12 @@ br {
     height: 2rem;
   }
 
+  .btn-translate-quote {
+    left: 55px;
+    width: 2rem;
+    height: 2rem;
+  }
+
   .btn-picture {
     width: 3rem;
     height: 3rem;
@@ -315,11 +340,11 @@ br {
 @media (max-width: 480px) {
   .city {
     margin-left: 40px;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .weather-info {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 
   .weather-icon {
@@ -334,37 +359,43 @@ br {
   }
 
   .time {
-    font-size: 2.5rem;
+    font-size: 3rem;
     align-self: flex-end;
   }
 
   .userName-wrap {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .userName {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .userFocus-wrap {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .userFocus {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
 
   .quote {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .btn-quote {
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .btn-translate-quote {
+    left: 50px;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
   .btn-picture {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.7rem;
+    height: 1.7rem;
   }
 }
